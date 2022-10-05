@@ -21,6 +21,7 @@ import { Fragment, useEffect, useState } from 'react'
 import { trpc } from '../utils/trpc'
 import Bar from '../components/Bar'
 import { IMessage } from '../interfaces/message'
+import { useRouter } from 'next/router'
 
 export default function IndexPage() {
   // 💡 Tip: CMD+Click (or CTRL+Click) on `greeting` to go to the server definition
@@ -31,10 +32,13 @@ export default function IndexPage() {
 
   const mutation = trpc.addMessage.useMutation()
 
+  const router = useRouter()
+
   const handleSubmit = async () => {
     if (inputMessage.length === 0) return
     mutation.mutate({ text: inputMessage })
     setInputMessage('')
+    router.reload()
   }
 
   if (!allMessages.data) {
