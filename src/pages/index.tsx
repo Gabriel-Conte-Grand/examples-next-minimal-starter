@@ -22,26 +22,26 @@ import { trpc } from '../utils/trpc'
 import Bar from '../components/Bar'
 import { IMessage } from '../interfaces/message'
 import { useRouter } from 'next/router'
+import { QueryClient } from '@tanstack/react-query'
 
 export default function IndexPage() {
   // 💡 Tip: CMD+Click (or CTRL+Click) on `greeting` to go to the server definition
 
   const [inputMessage, setInputMessage] = useState<string>('')
 
-  let allMessages = trpc.getMessages.useQuery()
+  const { data } = trpc.useQuery(['messages.msg.list'])
+  const allMessages = data
 
-  const mutation = trpc.addMessage.useMutation()
+  const addMessage = trpc.useMutation(['messages.msg.add'])
 
-  const router = useRouter()
-
-  const handleSubmit = async () => {
-    if (inputMessage.length === 0) return
-    mutation.mutate({ text: inputMessage })
-    setInputMessage('')
-    router.reload()
+  const onSubmitMessage = async () => {
+    if (inputMessage.trim().length) {
+      await addMessage.mutate({ text: inputMessage })
+      setInputMessage('')
+    }
   }
 
-  if (!allMessages.data) {
+  if (!allMessages) {
     return (
       <div style={styles}>
         <h1>Loading...</h1>
@@ -49,13 +49,13 @@ export default function IndexPage() {
     )
   }
 
-  const showMessages = allMessages.data.messages!.map((msg) => {
+  const showMessages = allMessages!.map((msg) => {
     let newDate = new Date().toDateString().slice(0, -5)
 
     const hours = new Date(msg.createdAt!).getHours()
     let minutes = new Date(msg.createdAt!).getMinutes().toString()
     if (minutes.toString().length === 1) {
-      minutes += '0'
+      minutes = '0' + minutes
     }
     newDate = newDate + ', ' + hours + ':' + minutes
 
@@ -128,7 +128,7 @@ export default function IndexPage() {
                 </Grid>
                 <Grid xs={1} item>
                   <IconButton
-                    onClick={handleSubmit}
+                    onClick={onSubmitMessage}
                     aria-label='send'
                     color='primary'
                   >

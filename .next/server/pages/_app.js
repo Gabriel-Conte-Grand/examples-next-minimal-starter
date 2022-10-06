@@ -1,135 +1,118 @@
 "use strict";
-/*
- * ATTENTION: An "eval-source-map" devtool has been used.
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 (() => {
 var exports = {};
-exports.id = "pages/_app";
-exports.ids = ["pages/_app"];
+exports.id = 888;
+exports.ids = [888];
 exports.modules = {
 
-/***/ "./src/pages/_app.tsx":
-/*!****************************!*\
-  !*** ./src/pages/_app.tsx ***!
-  \****************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ 2025:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _utils_trpc__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/trpc */ \"./src/utils/trpc.ts\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_utils_trpc__WEBPACK_IMPORTED_MODULE_1__]);\n_utils_trpc__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\n\nconst MyApp = ({ Component , pageProps  })=>{\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(Component, {\n        ...pageProps\n    }, void 0, false, {\n        fileName: \"C:\\\\Users\\\\Gabi\\\\Desktop\\\\React-PRO\\\\NextJs\\\\examples-next-minimal-starter\\\\src\\\\pages\\\\_app.tsx\",\n        lineNumber: 5,\n        columnNumber: 10\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_utils_trpc__WEBPACK_IMPORTED_MODULE_1__.trpc.withTRPC(MyApp));\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcGFnZXMvX2FwcC50c3guanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7OztBQUFBO0FBQ3FDO0FBRXJDLE1BQU1DLEtBQUssR0FBWSxDQUFDLEVBQUVDLFNBQVMsR0FBRUMsU0FBUyxHQUFFLEdBQUs7SUFDbkQscUJBQU8sOERBQUNELFNBQVM7UUFBRSxHQUFHQyxTQUFTOzs7OztpQkFBSSxDQUFDO0FBQ3RDLENBQUM7QUFFRCxpRUFBZUgsc0RBQWEsQ0FBQ0MsS0FBSyxDQUFDLEVBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9AZXhhbXBsZXMvbmV4dC1taW5pbWFsLy4vc3JjL3BhZ2VzL19hcHAudHN4P2Y5ZDYiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHR5cGUgeyBBcHBUeXBlIH0gZnJvbSAnbmV4dC9hcHAnO1xyXG5pbXBvcnQgeyB0cnBjIH0gZnJvbSAnLi4vdXRpbHMvdHJwYyc7XHJcblxyXG5jb25zdCBNeUFwcDogQXBwVHlwZSA9ICh7IENvbXBvbmVudCwgcGFnZVByb3BzIH0pID0+IHtcclxuICByZXR1cm4gPENvbXBvbmVudCB7Li4ucGFnZVByb3BzfSAvPjtcclxufTtcclxuXHJcbmV4cG9ydCBkZWZhdWx0IHRycGMud2l0aFRSUEMoTXlBcHApO1xyXG4iXSwibmFtZXMiOlsidHJwYyIsIk15QXBwIiwiQ29tcG9uZW50IiwicGFnZVByb3BzIiwid2l0aFRSUEMiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/pages/_app.tsx\n");
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ _app)
+});
+
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__(997);
+// EXTERNAL MODULE: ./node_modules/@trpc/next/dist/trpc-next.cjs.js
+var trpc_next_cjs = __webpack_require__(1820);
+;// CONCATENATED MODULE: external "@trpc/client/links/loggerLink"
+const loggerLink_namespaceObject = require("@trpc/client/links/loggerLink");
+;// CONCATENATED MODULE: external "@trpc/client/links/httpBatchLink"
+const httpBatchLink_namespaceObject = require("@trpc/client/links/httpBatchLink");
+;// CONCATENATED MODULE: external "superjson"
+const external_superjson_namespaceObject = require("superjson");
+var external_superjson_default = /*#__PURE__*/__webpack_require__.n(external_superjson_namespaceObject);
+;// CONCATENATED MODULE: ./src/constants.ts
+const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}` : "http://localhost:3000";
+const url = `${baseUrl}/api/trpc`;
+
+;// CONCATENATED MODULE: ./src/pages/_app.tsx
+
+
+
+
+
+
+function MyApp({ Component , pageProps  }) {
+    return /*#__PURE__*/ jsx_runtime_.jsx("main", {
+        children: /*#__PURE__*/ jsx_runtime_.jsx(Component, {
+            ...pageProps
+        })
+    });
+}
+/* harmony default export */ const _app = ((0,trpc_next_cjs.withTRPC)({
+    config ({ ctx  }) {
+        const links = [
+            (0,loggerLink_namespaceObject.loggerLink)(),
+            (0,httpBatchLink_namespaceObject.httpBatchLink)({
+                maxBatchSize: 10,
+                url: url
+            }), 
+        ];
+        return {
+            queryClientConfig: {
+                defaultOptions: {
+                    queries: {
+                        staleTime: 60
+                    }
+                }
+            },
+            headers () {
+                if (ctx?.req) {
+                    return {
+                        ...ctx.req.headers,
+                        "x-ssr": "1"
+                    };
+                }
+                return {};
+            },
+            links,
+            transformer: (external_superjson_default())
+        };
+    },
+    ssr: false
+})(MyApp));
+
 
 /***/ }),
 
-/***/ "./src/utils/trpc.ts":
-/*!***************************!*\
-  !*** ./src/utils/trpc.ts ***!
-  \***************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ 1782:
+/***/ ((module) => {
 
-eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"trpc\": () => (/* binding */ trpc)\n/* harmony export */ });\n/* harmony import */ var _trpc_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @trpc/client */ \"@trpc/client\");\n/* harmony import */ var _trpc_next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @trpc/next */ \"./node_modules/@trpc/next/dist/index.mjs\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_trpc_client__WEBPACK_IMPORTED_MODULE_0__, _trpc_next__WEBPACK_IMPORTED_MODULE_1__]);\n([_trpc_client__WEBPACK_IMPORTED_MODULE_0__, _trpc_next__WEBPACK_IMPORTED_MODULE_1__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);\n\n\nfunction getBaseUrl() {\n    if (false) {}\n    // When rendering on the server, we return an absolute URL\n    // reference for vercel.com\n    if (process.env.VERCEL_URL) {\n        return `https://${process.env.VERCEL_URL}`;\n    }\n    // assume localhost\n    return `http://localhost:${process.env.PORT ?? 3000}`;\n}\nconst trpc = (0,_trpc_next__WEBPACK_IMPORTED_MODULE_1__.createTRPCNext)({\n    config () {\n        return {\n            links: [\n                (0,_trpc_client__WEBPACK_IMPORTED_MODULE_0__.httpBatchLink)({\n                    url: getBaseUrl() + \"/api/trpc\"\n                }), \n            ]\n        };\n    },\n    ssr: true\n});\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvdXRpbHMvdHJwYy50cy5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBNkM7QUFDRDtBQUc1QyxTQUFTRSxVQUFVLEdBQUc7SUFDcEIsSUFBSSxLQUE2QixFQUFFLEVBR2xDO0lBQ0QsMERBQTBEO0lBRTFELDJCQUEyQjtJQUMzQixJQUFJQyxPQUFPLENBQUNDLEdBQUcsQ0FBQ0MsVUFBVSxFQUFFO1FBQzFCLE9BQU8sQ0FBQyxRQUFRLEVBQUVGLE9BQU8sQ0FBQ0MsR0FBRyxDQUFDQyxVQUFVLENBQUMsQ0FBQyxDQUFDO0lBQzdDLENBQUM7SUFFRCxtQkFBbUI7SUFDbkIsT0FBTyxDQUFDLGlCQUFpQixFQUFFRixPQUFPLENBQUNDLEdBQUcsQ0FBQ0UsSUFBSSxJQUFJLElBQUksQ0FBQyxDQUFDLENBQUM7QUFDeEQsQ0FBQztBQUVNLE1BQU1DLElBQUksR0FBR04sMERBQWMsQ0FBWTtJQUM1Q08sTUFBTSxJQUFHO1FBQ1AsT0FBTztZQUNMQyxLQUFLLEVBQUU7Z0JBQ0xULDJEQUFhLENBQUM7b0JBQ1pVLEdBQUcsRUFBRVIsVUFBVSxFQUFFLEdBQUcsV0FBVztpQkFDaEMsQ0FBQzthQUNIO1NBQ0YsQ0FBQztJQUNKLENBQUM7SUFDRFMsR0FBRyxFQUFFLElBQUk7Q0FDVixDQUFDLENBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9AZXhhbXBsZXMvbmV4dC1taW5pbWFsLy4vc3JjL3V0aWxzL3RycGMudHM/MTFjOCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBodHRwQmF0Y2hMaW5rIH0gZnJvbSAnQHRycGMvY2xpZW50JztcclxuaW1wb3J0IHsgY3JlYXRlVFJQQ05leHQgfSBmcm9tICdAdHJwYy9uZXh0JztcclxuaW1wb3J0IHR5cGUgeyBBcHBSb3V0ZXIgfSBmcm9tICcuLi9wYWdlcy9hcGkvdHJwYy9bdHJwY10nO1xyXG5cclxuZnVuY3Rpb24gZ2V0QmFzZVVybCgpIHtcclxuICBpZiAodHlwZW9mIHdpbmRvdyAhPT0gJ3VuZGVmaW5lZCcpIHtcclxuICAgIC8vIEluIHRoZSBicm93c2VyLCB3ZSByZXR1cm4gYSByZWxhdGl2ZSBVUkxcclxuICAgIHJldHVybiAnJztcclxuICB9XHJcbiAgLy8gV2hlbiByZW5kZXJpbmcgb24gdGhlIHNlcnZlciwgd2UgcmV0dXJuIGFuIGFic29sdXRlIFVSTFxyXG5cclxuICAvLyByZWZlcmVuY2UgZm9yIHZlcmNlbC5jb21cclxuICBpZiAocHJvY2Vzcy5lbnYuVkVSQ0VMX1VSTCkge1xyXG4gICAgcmV0dXJuIGBodHRwczovLyR7cHJvY2Vzcy5lbnYuVkVSQ0VMX1VSTH1gO1xyXG4gIH1cclxuXHJcbiAgLy8gYXNzdW1lIGxvY2FsaG9zdFxyXG4gIHJldHVybiBgaHR0cDovL2xvY2FsaG9zdDoke3Byb2Nlc3MuZW52LlBPUlQgPz8gMzAwMH1gO1xyXG59XHJcblxyXG5leHBvcnQgY29uc3QgdHJwYyA9IGNyZWF0ZVRSUENOZXh0PEFwcFJvdXRlcj4oe1xyXG4gIGNvbmZpZygpIHtcclxuICAgIHJldHVybiB7XHJcbiAgICAgIGxpbmtzOiBbXHJcbiAgICAgICAgaHR0cEJhdGNoTGluayh7XHJcbiAgICAgICAgICB1cmw6IGdldEJhc2VVcmwoKSArICcvYXBpL3RycGMnLFxyXG4gICAgICAgIH0pLFxyXG4gICAgICBdLFxyXG4gICAgfTtcclxuICB9LFxyXG4gIHNzcjogdHJ1ZSxcclxufSk7XHJcbiJdLCJuYW1lcyI6WyJodHRwQmF0Y2hMaW5rIiwiY3JlYXRlVFJQQ05leHQiLCJnZXRCYXNlVXJsIiwicHJvY2VzcyIsImVudiIsIlZFUkNFTF9VUkwiLCJQT1JUIiwidHJwYyIsImNvbmZpZyIsImxpbmtzIiwidXJsIiwic3NyIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/utils/trpc.ts\n");
+module.exports = require("@trpc/react");
 
 /***/ }),
 
-/***/ "react":
-/*!************************!*\
-  !*** external "react" ***!
-  \************************/
+/***/ 6689:
 /***/ ((module) => {
 
 module.exports = require("react");
 
 /***/ }),
 
-/***/ "react-ssr-prepass":
-/*!************************************!*\
-  !*** external "react-ssr-prepass" ***!
-  \************************************/
+/***/ 1175:
+/***/ ((module) => {
+
+module.exports = require("react-query");
+
+/***/ }),
+
+/***/ 7583:
 /***/ ((module) => {
 
 module.exports = require("react-ssr-prepass");
 
 /***/ }),
 
-/***/ "react/jsx-dev-runtime":
-/*!****************************************!*\
-  !*** external "react/jsx-dev-runtime" ***!
-  \****************************************/
+/***/ 997:
 /***/ ((module) => {
 
-module.exports = require("react/jsx-dev-runtime");
-
-/***/ }),
-
-/***/ "@tanstack/react-query":
-/*!****************************************!*\
-  !*** external "@tanstack/react-query" ***!
-  \****************************************/
-/***/ ((module) => {
-
-module.exports = import("@tanstack/react-query");;
-
-/***/ }),
-
-/***/ "@trpc/client":
-/*!*******************************!*\
-  !*** external "@trpc/client" ***!
-  \*******************************/
-/***/ ((module) => {
-
-module.exports = import("@trpc/client");;
-
-/***/ }),
-
-/***/ "@trpc/react":
-/*!******************************!*\
-  !*** external "@trpc/react" ***!
-  \******************************/
-/***/ ((module) => {
-
-module.exports = import("@trpc/react");;
-
-/***/ }),
-
-/***/ "@trpc/react/shared":
-/*!*************************************!*\
-  !*** external "@trpc/react/shared" ***!
-  \*************************************/
-/***/ ((module) => {
-
-module.exports = import("@trpc/react/shared");;
-
-/***/ }),
-
-/***/ "@trpc/server/shared":
-/*!**************************************!*\
-  !*** external "@trpc/server/shared" ***!
-  \**************************************/
-/***/ ((module) => {
-
-module.exports = import("@trpc/server/shared");;
-
-/***/ }),
-
-/***/ "./node_modules/@swc/helpers/src/_extends.mjs":
-/*!****************************************************!*\
-  !*** ./node_modules/@swc/helpers/src/_extends.mjs ***!
-  \****************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _extends)\n/* harmony export */ });\nfunction extends_() {\n  extends_ = Object.assign || function (target) {\n    for (var i = 1; i < arguments.length; i++) {\n      var source = arguments[i];\n\n      for (var key in source) {\n        if (Object.prototype.hasOwnProperty.call(source, key)) {\n          target[key] = source[key];\n        }\n      }\n    }\n\n    return target;\n  };\n\n  return extends_.apply(this, arguments);\n}\n\nfunction _extends() {\n  return extends_.apply(this, arguments);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9ub2RlX21vZHVsZXMvQHN3Yy9oZWxwZXJzL3NyYy9fZXh0ZW5kcy5tanMuanMiLCJtYXBwaW5ncyI6Ijs7OztBQUFBO0FBQ0E7QUFDQSxvQkFBb0Isc0JBQXNCO0FBQzFDOztBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBOztBQUVBO0FBQ0E7O0FBRWU7QUFDZjtBQUNBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vQGV4YW1wbGVzL25leHQtbWluaW1hbC8uL25vZGVfbW9kdWxlcy9Ac3djL2hlbHBlcnMvc3JjL19leHRlbmRzLm1qcz9hMWI0Il0sInNvdXJjZXNDb250ZW50IjpbImZ1bmN0aW9uIGV4dGVuZHNfKCkge1xuICBleHRlbmRzXyA9IE9iamVjdC5hc3NpZ24gfHwgZnVuY3Rpb24gKHRhcmdldCkge1xuICAgIGZvciAodmFyIGkgPSAxOyBpIDwgYXJndW1lbnRzLmxlbmd0aDsgaSsrKSB7XG4gICAgICB2YXIgc291cmNlID0gYXJndW1lbnRzW2ldO1xuXG4gICAgICBmb3IgKHZhciBrZXkgaW4gc291cmNlKSB7XG4gICAgICAgIGlmIChPYmplY3QucHJvdG90eXBlLmhhc093blByb3BlcnR5LmNhbGwoc291cmNlLCBrZXkpKSB7XG4gICAgICAgICAgdGFyZ2V0W2tleV0gPSBzb3VyY2Vba2V5XTtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cblxuICAgIHJldHVybiB0YXJnZXQ7XG4gIH07XG5cbiAgcmV0dXJuIGV4dGVuZHNfLmFwcGx5KHRoaXMsIGFyZ3VtZW50cyk7XG59XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIF9leHRlbmRzKCkge1xuICByZXR1cm4gZXh0ZW5kc18uYXBwbHkodGhpcywgYXJndW1lbnRzKTtcbn1cbiJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./node_modules/@swc/helpers/src/_extends.mjs\n");
-
-/***/ }),
-
-/***/ "./node_modules/@trpc/next/dist/index.mjs":
-/*!************************************************!*\
-  !*** ./node_modules/@trpc/next/dist/index.mjs ***!
-  \************************************************/
-/***/ ((__webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.a(__webpack_module__, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createTRPCNext\": () => (/* binding */ createTRPCNext),\n/* harmony export */   \"withTRPC\": () => (/* binding */ withTRPC)\n/* harmony export */ });\n/* harmony import */ var _swc_helpers_src_extends_mjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @swc/helpers/src/_extends.mjs */ \"./node_modules/@swc/helpers/src/_extends.mjs\");\n/* harmony import */ var _tanstack_react_query__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @tanstack/react-query */ \"@tanstack/react-query\");\n/* harmony import */ var _trpc_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @trpc/react */ \"@trpc/react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react_ssr_prepass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-ssr-prepass */ \"react-ssr-prepass\");\n/* harmony import */ var _trpc_react_shared__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @trpc/react/shared */ \"@trpc/react/shared\");\n/* harmony import */ var _trpc_server_shared__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @trpc/server/shared */ \"@trpc/server/shared\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_tanstack_react_query__WEBPACK_IMPORTED_MODULE_0__, _trpc_react__WEBPACK_IMPORTED_MODULE_1__, _trpc_react_shared__WEBPACK_IMPORTED_MODULE_4__, _trpc_server_shared__WEBPACK_IMPORTED_MODULE_5__]);\n([_tanstack_react_query__WEBPACK_IMPORTED_MODULE_0__, _trpc_react__WEBPACK_IMPORTED_MODULE_1__, _trpc_react_shared__WEBPACK_IMPORTED_MODULE_4__, _trpc_server_shared__WEBPACK_IMPORTED_MODULE_5__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);\n\n\n\n\n\n\n\n\nfunction transformQueryOrMutationCacheErrors(result) {\n    const error = result.state.error;\n    if (error instanceof Error && error.name === 'TRPCClientError') {\n        const newError = {\n            message: error.message,\n            data: error.data,\n            shape: error.shape\n        };\n        return {\n            ...result,\n            state: {\n                ...result.state,\n                error: newError\n            }\n        };\n    }\n    return result;\n}\nfunction withTRPC(opts) {\n    const { config: getClientConfig  } = opts;\n    return (AppOrPage)=>{\n        const trpc = (0,_trpc_react__WEBPACK_IMPORTED_MODULE_1__.createReactQueryHooks)();\n        const WithTRPC = (props)=>{\n            const [prepassProps] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(()=>{\n                if (props.trpc) {\n                    return props.trpc;\n                }\n                const config = getClientConfig({});\n                const queryClient = new _tanstack_react_query__WEBPACK_IMPORTED_MODULE_0__.QueryClient(config.queryClientConfig);\n                const trpcClient = trpc.createClient(config);\n                return {\n                    abortOnUnmount: config.abortOnUnmount,\n                    queryClient,\n                    trpcClient,\n                    ssrState: opts.ssr ? 'mounting' : false,\n                    ssrContext: null\n                };\n            });\n            const { queryClient , trpcClient , ssrState , ssrContext  } = prepassProps;\n            const hydratedState = trpc.useDehydratedState(trpcClient, // eslint-disable-next-line @typescript-eslint/no-explicit-any\n            props.pageProps.trpcState);\n            return /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_2__.createElement(trpc.Provider, {\n                abortOnUnmount: prepassProps.abortOnUnmount ?? false,\n                client: trpcClient,\n                queryClient: queryClient,\n                ssrState: ssrState,\n                ssrContext: ssrContext\n            }, /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_2__.createElement(_tanstack_react_query__WEBPACK_IMPORTED_MODULE_0__.QueryClientProvider, {\n                client: queryClient\n            }, /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_2__.createElement(_tanstack_react_query__WEBPACK_IMPORTED_MODULE_0__.Hydrate, {\n                state: hydratedState\n            }, /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_2__.createElement(AppOrPage, (0,_swc_helpers_src_extends_mjs__WEBPACK_IMPORTED_MODULE_6__[\"default\"])({}, props)))));\n        };\n        if (AppOrPage.getInitialProps || opts.ssr) {\n            WithTRPC.getInitialProps = async (appOrPageCtx)=>{\n                const AppTree = appOrPageCtx.AppTree;\n                // Determine if we are wrapping an App component or a Page component.\n                const isApp = !!appOrPageCtx.Component;\n                const ctx = isApp ? appOrPageCtx.ctx : appOrPageCtx;\n                // Run the wrapped component's getInitialProps function.\n                let pageProps = {};\n                if (AppOrPage.getInitialProps) {\n                    const originalProps = await AppOrPage.getInitialProps(appOrPageCtx);\n                    const originalPageProps = isApp ? originalProps.pageProps ?? {} : originalProps;\n                    pageProps = {\n                        ...originalPageProps,\n                        ...pageProps\n                    };\n                }\n                const getAppTreeProps = (props)=>isApp ? {\n                        pageProps: props\n                    } : props;\n                if (typeof window !== 'undefined' || !opts.ssr) {\n                    return getAppTreeProps(pageProps);\n                }\n                const config = getClientConfig({\n                    ctx\n                });\n                const trpcClient = (0,_trpc_react__WEBPACK_IMPORTED_MODULE_1__.createTRPCClient)(config);\n                const queryClient = new _tanstack_react_query__WEBPACK_IMPORTED_MODULE_0__.QueryClient(config.queryClientConfig);\n                const trpcProp = {\n                    config,\n                    trpcClient,\n                    queryClient,\n                    ssrState: 'prepass',\n                    ssrContext: ctx\n                };\n                const prepassProps = {\n                    pageProps,\n                    trpc: trpcProp\n                };\n                // Run the prepass step on AppTree. This will run all trpc queries on the server.\n                // multiple prepass ensures that we can do batching on the server\n                while(true){\n                    // render full tree\n                    await react_ssr_prepass__WEBPACK_IMPORTED_MODULE_3__(/*#__PURE__*/ (0,react__WEBPACK_IMPORTED_MODULE_2__.createElement)(AppTree, prepassProps));\n                    if (!queryClient.isFetching()) {\n                        break;\n                    }\n                    // wait until the query cache has settled it's promises\n                    await new Promise((resolve)=>{\n                        const unsub = queryClient.getQueryCache().subscribe((event)=>{\n                            if (event?.query.getObserversCount() === 0) {\n                                resolve();\n                                unsub();\n                            }\n                        });\n                    });\n                }\n                const dehydratedCache = (0,_tanstack_react_query__WEBPACK_IMPORTED_MODULE_0__.dehydrate)(queryClient, {\n                    shouldDehydrateQuery () {\n                        // makes sure errors are also dehydrated\n                        return true;\n                    }\n                });\n                // since error instances can't be serialized, let's make them into `TRPCClientErrorLike`-objects\n                const dehydratedCacheWithErrors = {\n                    ...dehydratedCache,\n                    queries: dehydratedCache.queries.map(transformQueryOrMutationCacheErrors),\n                    mutations: dehydratedCache.mutations.map(transformQueryOrMutationCacheErrors)\n                };\n                // dehydrate query client's state and add it to the props\n                pageProps.trpcState = trpcClient.runtime.transformer.serialize(dehydratedCacheWithErrors);\n                const appTreeProps = getAppTreeProps(pageProps);\n                const meta = opts.responseMeta?.({\n                    ctx,\n                    clientErrors: [\n                        ...dehydratedCache.queries,\n                        ...dehydratedCache.mutations\n                    ].map((v)=>v.state.error).flatMap((err)=>err instanceof Error && err.name === 'TRPCClientError' ? [\n                            err\n                        ] : [])\n                }) || {};\n                for (const [key, value] of Object.entries(meta.headers || {})){\n                    if (typeof value === 'string') {\n                        ctx.res?.setHeader(key, value);\n                    }\n                }\n                if (meta.status && ctx.res) {\n                    ctx.res.statusCode = meta.status;\n                }\n                return appTreeProps;\n            };\n        }\n        const displayName = AppOrPage.displayName || AppOrPage.name || 'Component';\n        WithTRPC.displayName = `withTRPC(${displayName})`;\n        return WithTRPC;\n    };\n}\n\nfunction createTRPCNext(opts) {\n    const hooks = (0,_trpc_react_shared__WEBPACK_IMPORTED_MODULE_4__.createHooksInternal)();\n    // TODO: maybe set TSSRContext to `never` when using `WithTRPCNoSSROptions`\n    const _withTRPC = withTRPC(opts);\n    return (0,_trpc_server_shared__WEBPACK_IMPORTED_MODULE_5__.createFlatProxy)((key)=>{\n        if (key === 'useContext') {\n            return ()=>{\n                const context = hooks.useContext();\n                // create a stable reference of the utils context\n                return (0,react__WEBPACK_IMPORTED_MODULE_2__.useMemo)(()=>{\n                    return (0,_trpc_react_shared__WEBPACK_IMPORTED_MODULE_4__.createReactQueryUtilsProxy)(context);\n                }, [\n                    context\n                ]);\n            };\n        }\n        if (key === 'withTRPC') {\n            return _withTRPC;\n        }\n        return (0,_trpc_react_shared__WEBPACK_IMPORTED_MODULE_4__.createReactProxyDecoration)(key, hooks);\n    });\n}\n\n\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9ub2RlX21vZHVsZXMvQHRycGMvbmV4dC9kaXN0L2luZGV4Lm1qcy5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7QUFBcUQ7QUFDd0M7QUFDdkI7QUFDTjtBQUNyQjtBQUNzRTtBQUMzRDs7QUFFdEQ7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxZQUFZLDJCQUEyQjtBQUN2QztBQUNBLHFCQUFxQixrRUFBcUI7QUFDMUM7QUFDQSxtQ0FBbUMsK0NBQVE7QUFDM0M7QUFDQTtBQUNBO0FBQ0EsaURBQWlEO0FBQ2pELHdDQUF3Qyw4REFBVztBQUNuRDtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsYUFBYTtBQUNiLG9CQUFvQixvREFBb0Q7QUFDeEU7QUFDQTtBQUNBLGlDQUFpQyxnREFBbUI7QUFDcEQ7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLGFBQWEsZ0JBQWdCLGdEQUFtQixDQUFDLHNFQUFtQjtBQUNwRTtBQUNBLGFBQWEsZ0JBQWdCLGdEQUFtQixDQUFDLDBEQUFPO0FBQ3hEO0FBQ0EsYUFBYSxnQkFBZ0IsZ0RBQW1CLFlBQVksd0VBQVEsR0FBRztBQUN2RTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0Esb0ZBQW9GO0FBQ3BGO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0Esc0JBQXNCO0FBQ3RCO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxpQkFBaUI7QUFDakIsbUNBQW1DLDZEQUFnQjtBQUNuRCx3Q0FBd0MsOERBQVc7QUFDbkQ7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsMEJBQTBCLDhDQUFVLGVBQWUsb0RBQWE7QUFDaEU7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSx5QkFBeUI7QUFDekIscUJBQXFCO0FBQ3JCO0FBQ0Esd0NBQXdDLGdFQUFTO0FBQ2pEO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsaUJBQWlCO0FBQ2pCO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxpQkFBaUI7QUFDakIsNEVBQTRFO0FBQzVFO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSwyQ0FBMkMsWUFBWTtBQUN2RDtBQUNBO0FBQ0E7O0FBRUE7QUFDQSxrQkFBa0IsdUVBQW1CO0FBQ3JDO0FBQ0E7QUFDQSxXQUFXLG9FQUFlO0FBQzFCO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsdUJBQXVCLDhDQUFPO0FBQzlCLDJCQUEyQiw4RUFBMEI7QUFDckQsaUJBQWlCO0FBQ2pCO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsZUFBZSw4RUFBMEI7QUFDekMsS0FBSztBQUNMOztBQUVvQyIsInNvdXJjZXMiOlsid2VicGFjazovL0BleGFtcGxlcy9uZXh0LW1pbmltYWwvLi9ub2RlX21vZHVsZXMvQHRycGMvbmV4dC9kaXN0L2luZGV4Lm1qcz80OTk5Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBfZXh0ZW5kcyBmcm9tICdAc3djL2hlbHBlcnMvc3JjL19leHRlbmRzLm1qcyc7XG5pbXBvcnQgeyBRdWVyeUNsaWVudCwgZGVoeWRyYXRlLCBRdWVyeUNsaWVudFByb3ZpZGVyLCBIeWRyYXRlIH0gZnJvbSAnQHRhbnN0YWNrL3JlYWN0LXF1ZXJ5JztcbmltcG9ydCB7IGNyZWF0ZVJlYWN0UXVlcnlIb29rcywgY3JlYXRlVFJQQ0NsaWVudCB9IGZyb20gJ0B0cnBjL3JlYWN0JztcbmltcG9ydCBSZWFjdCwgeyBjcmVhdGVFbGVtZW50LCB1c2VTdGF0ZSwgdXNlTWVtbyB9IGZyb20gJ3JlYWN0JztcbmltcG9ydCBzc3JQcmVwYXNzIGZyb20gJ3JlYWN0LXNzci1wcmVwYXNzJztcbmltcG9ydCB7IGNyZWF0ZUhvb2tzSW50ZXJuYWwsIGNyZWF0ZVJlYWN0UXVlcnlVdGlsc1Byb3h5LCBjcmVhdGVSZWFjdFByb3h5RGVjb3JhdGlvbiB9IGZyb20gJ0B0cnBjL3JlYWN0L3NoYXJlZCc7XG5pbXBvcnQgeyBjcmVhdGVGbGF0UHJveHkgfSBmcm9tICdAdHJwYy9zZXJ2ZXIvc2hhcmVkJztcblxuZnVuY3Rpb24gdHJhbnNmb3JtUXVlcnlPck11dGF0aW9uQ2FjaGVFcnJvcnMocmVzdWx0KSB7XG4gICAgY29uc3QgZXJyb3IgPSByZXN1bHQuc3RhdGUuZXJyb3I7XG4gICAgaWYgKGVycm9yIGluc3RhbmNlb2YgRXJyb3IgJiYgZXJyb3IubmFtZSA9PT0gJ1RSUENDbGllbnRFcnJvcicpIHtcbiAgICAgICAgY29uc3QgbmV3RXJyb3IgPSB7XG4gICAgICAgICAgICBtZXNzYWdlOiBlcnJvci5tZXNzYWdlLFxuICAgICAgICAgICAgZGF0YTogZXJyb3IuZGF0YSxcbiAgICAgICAgICAgIHNoYXBlOiBlcnJvci5zaGFwZVxuICAgICAgICB9O1xuICAgICAgICByZXR1cm4ge1xuICAgICAgICAgICAgLi4ucmVzdWx0LFxuICAgICAgICAgICAgc3RhdGU6IHtcbiAgICAgICAgICAgICAgICAuLi5yZXN1bHQuc3RhdGUsXG4gICAgICAgICAgICAgICAgZXJyb3I6IG5ld0Vycm9yXG4gICAgICAgICAgICB9XG4gICAgICAgIH07XG4gICAgfVxuICAgIHJldHVybiByZXN1bHQ7XG59XG5mdW5jdGlvbiB3aXRoVFJQQyhvcHRzKSB7XG4gICAgY29uc3QgeyBjb25maWc6IGdldENsaWVudENvbmZpZyAgfSA9IG9wdHM7XG4gICAgcmV0dXJuIChBcHBPclBhZ2UpPT57XG4gICAgICAgIGNvbnN0IHRycGMgPSBjcmVhdGVSZWFjdFF1ZXJ5SG9va3MoKTtcbiAgICAgICAgY29uc3QgV2l0aFRSUEMgPSAocHJvcHMpPT57XG4gICAgICAgICAgICBjb25zdCBbcHJlcGFzc1Byb3BzXSA9IHVzZVN0YXRlKCgpPT57XG4gICAgICAgICAgICAgICAgaWYgKHByb3BzLnRycGMpIHtcbiAgICAgICAgICAgICAgICAgICAgcmV0dXJuIHByb3BzLnRycGM7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIGNvbnN0IGNvbmZpZyA9IGdldENsaWVudENvbmZpZyh7fSk7XG4gICAgICAgICAgICAgICAgY29uc3QgcXVlcnlDbGllbnQgPSBuZXcgUXVlcnlDbGllbnQoY29uZmlnLnF1ZXJ5Q2xpZW50Q29uZmlnKTtcbiAgICAgICAgICAgICAgICBjb25zdCB0cnBjQ2xpZW50ID0gdHJwYy5jcmVhdGVDbGllbnQoY29uZmlnKTtcbiAgICAgICAgICAgICAgICByZXR1cm4ge1xuICAgICAgICAgICAgICAgICAgICBhYm9ydE9uVW5tb3VudDogY29uZmlnLmFib3J0T25Vbm1vdW50LFxuICAgICAgICAgICAgICAgICAgICBxdWVyeUNsaWVudCxcbiAgICAgICAgICAgICAgICAgICAgdHJwY0NsaWVudCxcbiAgICAgICAgICAgICAgICAgICAgc3NyU3RhdGU6IG9wdHMuc3NyID8gJ21vdW50aW5nJyA6IGZhbHNlLFxuICAgICAgICAgICAgICAgICAgICBzc3JDb250ZXh0OiBudWxsXG4gICAgICAgICAgICAgICAgfTtcbiAgICAgICAgICAgIH0pO1xuICAgICAgICAgICAgY29uc3QgeyBxdWVyeUNsaWVudCAsIHRycGNDbGllbnQgLCBzc3JTdGF0ZSAsIHNzckNvbnRleHQgIH0gPSBwcmVwYXNzUHJvcHM7XG4gICAgICAgICAgICBjb25zdCBoeWRyYXRlZFN0YXRlID0gdHJwYy51c2VEZWh5ZHJhdGVkU3RhdGUodHJwY0NsaWVudCwgLy8gZXNsaW50LWRpc2FibGUtbmV4dC1saW5lIEB0eXBlc2NyaXB0LWVzbGludC9uby1leHBsaWNpdC1hbnlcbiAgICAgICAgICAgIHByb3BzLnBhZ2VQcm9wcy50cnBjU3RhdGUpO1xuICAgICAgICAgICAgcmV0dXJuIC8qI19fUFVSRV9fKi8gUmVhY3QuY3JlYXRlRWxlbWVudCh0cnBjLlByb3ZpZGVyLCB7XG4gICAgICAgICAgICAgICAgYWJvcnRPblVubW91bnQ6IHByZXBhc3NQcm9wcy5hYm9ydE9uVW5tb3VudCA/PyBmYWxzZSxcbiAgICAgICAgICAgICAgICBjbGllbnQ6IHRycGNDbGllbnQsXG4gICAgICAgICAgICAgICAgcXVlcnlDbGllbnQ6IHF1ZXJ5Q2xpZW50LFxuICAgICAgICAgICAgICAgIHNzclN0YXRlOiBzc3JTdGF0ZSxcbiAgICAgICAgICAgICAgICBzc3JDb250ZXh0OiBzc3JDb250ZXh0XG4gICAgICAgICAgICB9LCAvKiNfX1BVUkVfXyovIFJlYWN0LmNyZWF0ZUVsZW1lbnQoUXVlcnlDbGllbnRQcm92aWRlciwge1xuICAgICAgICAgICAgICAgIGNsaWVudDogcXVlcnlDbGllbnRcbiAgICAgICAgICAgIH0sIC8qI19fUFVSRV9fKi8gUmVhY3QuY3JlYXRlRWxlbWVudChIeWRyYXRlLCB7XG4gICAgICAgICAgICAgICAgc3RhdGU6IGh5ZHJhdGVkU3RhdGVcbiAgICAgICAgICAgIH0sIC8qI19fUFVSRV9fKi8gUmVhY3QuY3JlYXRlRWxlbWVudChBcHBPclBhZ2UsIF9leHRlbmRzKHt9LCBwcm9wcykpKSkpO1xuICAgICAgICB9O1xuICAgICAgICBpZiAoQXBwT3JQYWdlLmdldEluaXRpYWxQcm9wcyB8fCBvcHRzLnNzcikge1xuICAgICAgICAgICAgV2l0aFRSUEMuZ2V0SW5pdGlhbFByb3BzID0gYXN5bmMgKGFwcE9yUGFnZUN0eCk9PntcbiAgICAgICAgICAgICAgICBjb25zdCBBcHBUcmVlID0gYXBwT3JQYWdlQ3R4LkFwcFRyZWU7XG4gICAgICAgICAgICAgICAgLy8gRGV0ZXJtaW5lIGlmIHdlIGFyZSB3cmFwcGluZyBhbiBBcHAgY29tcG9uZW50IG9yIGEgUGFnZSBjb21wb25lbnQuXG4gICAgICAgICAgICAgICAgY29uc3QgaXNBcHAgPSAhIWFwcE9yUGFnZUN0eC5Db21wb25lbnQ7XG4gICAgICAgICAgICAgICAgY29uc3QgY3R4ID0gaXNBcHAgPyBhcHBPclBhZ2VDdHguY3R4IDogYXBwT3JQYWdlQ3R4O1xuICAgICAgICAgICAgICAgIC8vIFJ1biB0aGUgd3JhcHBlZCBjb21wb25lbnQncyBnZXRJbml0aWFsUHJvcHMgZnVuY3Rpb24uXG4gICAgICAgICAgICAgICAgbGV0IHBhZ2VQcm9wcyA9IHt9O1xuICAgICAgICAgICAgICAgIGlmIChBcHBPclBhZ2UuZ2V0SW5pdGlhbFByb3BzKSB7XG4gICAgICAgICAgICAgICAgICAgIGNvbnN0IG9yaWdpbmFsUHJvcHMgPSBhd2FpdCBBcHBPclBhZ2UuZ2V0SW5pdGlhbFByb3BzKGFwcE9yUGFnZUN0eCk7XG4gICAgICAgICAgICAgICAgICAgIGNvbnN0IG9yaWdpbmFsUGFnZVByb3BzID0gaXNBcHAgPyBvcmlnaW5hbFByb3BzLnBhZ2VQcm9wcyA/PyB7fSA6IG9yaWdpbmFsUHJvcHM7XG4gICAgICAgICAgICAgICAgICAgIHBhZ2VQcm9wcyA9IHtcbiAgICAgICAgICAgICAgICAgICAgICAgIC4uLm9yaWdpbmFsUGFnZVByb3BzLFxuICAgICAgICAgICAgICAgICAgICAgICAgLi4ucGFnZVByb3BzXG4gICAgICAgICAgICAgICAgICAgIH07XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIGNvbnN0IGdldEFwcFRyZWVQcm9wcyA9IChwcm9wcyk9PmlzQXBwID8ge1xuICAgICAgICAgICAgICAgICAgICAgICAgcGFnZVByb3BzOiBwcm9wc1xuICAgICAgICAgICAgICAgICAgICB9IDogcHJvcHM7XG4gICAgICAgICAgICAgICAgaWYgKHR5cGVvZiB3aW5kb3cgIT09ICd1bmRlZmluZWQnIHx8ICFvcHRzLnNzcikge1xuICAgICAgICAgICAgICAgICAgICByZXR1cm4gZ2V0QXBwVHJlZVByb3BzKHBhZ2VQcm9wcyk7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIGNvbnN0IGNvbmZpZyA9IGdldENsaWVudENvbmZpZyh7XG4gICAgICAgICAgICAgICAgICAgIGN0eFxuICAgICAgICAgICAgICAgIH0pO1xuICAgICAgICAgICAgICAgIGNvbnN0IHRycGNDbGllbnQgPSBjcmVhdGVUUlBDQ2xpZW50KGNvbmZpZyk7XG4gICAgICAgICAgICAgICAgY29uc3QgcXVlcnlDbGllbnQgPSBuZXcgUXVlcnlDbGllbnQoY29uZmlnLnF1ZXJ5Q2xpZW50Q29uZmlnKTtcbiAgICAgICAgICAgICAgICBjb25zdCB0cnBjUHJvcCA9IHtcbiAgICAgICAgICAgICAgICAgICAgY29uZmlnLFxuICAgICAgICAgICAgICAgICAgICB0cnBjQ2xpZW50LFxuICAgICAgICAgICAgICAgICAgICBxdWVyeUNsaWVudCxcbiAgICAgICAgICAgICAgICAgICAgc3NyU3RhdGU6ICdwcmVwYXNzJyxcbiAgICAgICAgICAgICAgICAgICAgc3NyQ29udGV4dDogY3R4XG4gICAgICAgICAgICAgICAgfTtcbiAgICAgICAgICAgICAgICBjb25zdCBwcmVwYXNzUHJvcHMgPSB7XG4gICAgICAgICAgICAgICAgICAgIHBhZ2VQcm9wcyxcbiAgICAgICAgICAgICAgICAgICAgdHJwYzogdHJwY1Byb3BcbiAgICAgICAgICAgICAgICB9O1xuICAgICAgICAgICAgICAgIC8vIFJ1biB0aGUgcHJlcGFzcyBzdGVwIG9uIEFwcFRyZWUuIFRoaXMgd2lsbCBydW4gYWxsIHRycGMgcXVlcmllcyBvbiB0aGUgc2VydmVyLlxuICAgICAgICAgICAgICAgIC8vIG11bHRpcGxlIHByZXBhc3MgZW5zdXJlcyB0aGF0IHdlIGNhbiBkbyBiYXRjaGluZyBvbiB0aGUgc2VydmVyXG4gICAgICAgICAgICAgICAgd2hpbGUodHJ1ZSl7XG4gICAgICAgICAgICAgICAgICAgIC8vIHJlbmRlciBmdWxsIHRyZWVcbiAgICAgICAgICAgICAgICAgICAgYXdhaXQgc3NyUHJlcGFzcygvKiNfX1BVUkVfXyovIGNyZWF0ZUVsZW1lbnQoQXBwVHJlZSwgcHJlcGFzc1Byb3BzKSk7XG4gICAgICAgICAgICAgICAgICAgIGlmICghcXVlcnlDbGllbnQuaXNGZXRjaGluZygpKSB7XG4gICAgICAgICAgICAgICAgICAgICAgICBicmVhaztcbiAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgICAvLyB3YWl0IHVudGlsIHRoZSBxdWVyeSBjYWNoZSBoYXMgc2V0dGxlZCBpdCdzIHByb21pc2VzXG4gICAgICAgICAgICAgICAgICAgIGF3YWl0IG5ldyBQcm9taXNlKChyZXNvbHZlKT0+e1xuICAgICAgICAgICAgICAgICAgICAgICAgY29uc3QgdW5zdWIgPSBxdWVyeUNsaWVudC5nZXRRdWVyeUNhY2hlKCkuc3Vic2NyaWJlKChldmVudCk9PntcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBpZiAoZXZlbnQ/LnF1ZXJ5LmdldE9ic2VydmVyc0NvdW50KCkgPT09IDApIHtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgcmVzb2x2ZSgpO1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB1bnN1YigpO1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICAgICAgICAgIH0pO1xuICAgICAgICAgICAgICAgICAgICB9KTtcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgY29uc3QgZGVoeWRyYXRlZENhY2hlID0gZGVoeWRyYXRlKHF1ZXJ5Q2xpZW50LCB7XG4gICAgICAgICAgICAgICAgICAgIHNob3VsZERlaHlkcmF0ZVF1ZXJ5ICgpIHtcbiAgICAgICAgICAgICAgICAgICAgICAgIC8vIG1ha2VzIHN1cmUgZXJyb3JzIGFyZSBhbHNvIGRlaHlkcmF0ZWRcbiAgICAgICAgICAgICAgICAgICAgICAgIHJldHVybiB0cnVlO1xuICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgfSk7XG4gICAgICAgICAgICAgICAgLy8gc2luY2UgZXJyb3IgaW5zdGFuY2VzIGNhbid0IGJlIHNlcmlhbGl6ZWQsIGxldCdzIG1ha2UgdGhlbSBpbnRvIGBUUlBDQ2xpZW50RXJyb3JMaWtlYC1vYmplY3RzXG4gICAgICAgICAgICAgICAgY29uc3QgZGVoeWRyYXRlZENhY2hlV2l0aEVycm9ycyA9IHtcbiAgICAgICAgICAgICAgICAgICAgLi4uZGVoeWRyYXRlZENhY2hlLFxuICAgICAgICAgICAgICAgICAgICBxdWVyaWVzOiBkZWh5ZHJhdGVkQ2FjaGUucXVlcmllcy5tYXAodHJhbnNmb3JtUXVlcnlPck11dGF0aW9uQ2FjaGVFcnJvcnMpLFxuICAgICAgICAgICAgICAgICAgICBtdXRhdGlvbnM6IGRlaHlkcmF0ZWRDYWNoZS5tdXRhdGlvbnMubWFwKHRyYW5zZm9ybVF1ZXJ5T3JNdXRhdGlvbkNhY2hlRXJyb3JzKVxuICAgICAgICAgICAgICAgIH07XG4gICAgICAgICAgICAgICAgLy8gZGVoeWRyYXRlIHF1ZXJ5IGNsaWVudCdzIHN0YXRlIGFuZCBhZGQgaXQgdG8gdGhlIHByb3BzXG4gICAgICAgICAgICAgICAgcGFnZVByb3BzLnRycGNTdGF0ZSA9IHRycGNDbGllbnQucnVudGltZS50cmFuc2Zvcm1lci5zZXJpYWxpemUoZGVoeWRyYXRlZENhY2hlV2l0aEVycm9ycyk7XG4gICAgICAgICAgICAgICAgY29uc3QgYXBwVHJlZVByb3BzID0gZ2V0QXBwVHJlZVByb3BzKHBhZ2VQcm9wcyk7XG4gICAgICAgICAgICAgICAgY29uc3QgbWV0YSA9IG9wdHMucmVzcG9uc2VNZXRhPy4oe1xuICAgICAgICAgICAgICAgICAgICBjdHgsXG4gICAgICAgICAgICAgICAgICAgIGNsaWVudEVycm9yczogW1xuICAgICAgICAgICAgICAgICAgICAgICAgLi4uZGVoeWRyYXRlZENhY2hlLnF1ZXJpZXMsXG4gICAgICAgICAgICAgICAgICAgICAgICAuLi5kZWh5ZHJhdGVkQ2FjaGUubXV0YXRpb25zXG4gICAgICAgICAgICAgICAgICAgIF0ubWFwKCh2KT0+di5zdGF0ZS5lcnJvcikuZmxhdE1hcCgoZXJyKT0+ZXJyIGluc3RhbmNlb2YgRXJyb3IgJiYgZXJyLm5hbWUgPT09ICdUUlBDQ2xpZW50RXJyb3InID8gW1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgIGVyclxuICAgICAgICAgICAgICAgICAgICAgICAgXSA6IFtdKVxuICAgICAgICAgICAgICAgIH0pIHx8IHt9O1xuICAgICAgICAgICAgICAgIGZvciAoY29uc3QgW2tleSwgdmFsdWVdIG9mIE9iamVjdC5lbnRyaWVzKG1ldGEuaGVhZGVycyB8fCB7fSkpe1xuICAgICAgICAgICAgICAgICAgICBpZiAodHlwZW9mIHZhbHVlID09PSAnc3RyaW5nJykge1xuICAgICAgICAgICAgICAgICAgICAgICAgY3R4LnJlcz8uc2V0SGVhZGVyKGtleSwgdmFsdWUpO1xuICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIGlmIChtZXRhLnN0YXR1cyAmJiBjdHgucmVzKSB7XG4gICAgICAgICAgICAgICAgICAgIGN0eC5yZXMuc3RhdHVzQ29kZSA9IG1ldGEuc3RhdHVzO1xuICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICByZXR1cm4gYXBwVHJlZVByb3BzO1xuICAgICAgICAgICAgfTtcbiAgICAgICAgfVxuICAgICAgICBjb25zdCBkaXNwbGF5TmFtZSA9IEFwcE9yUGFnZS5kaXNwbGF5TmFtZSB8fCBBcHBPclBhZ2UubmFtZSB8fCAnQ29tcG9uZW50JztcbiAgICAgICAgV2l0aFRSUEMuZGlzcGxheU5hbWUgPSBgd2l0aFRSUEMoJHtkaXNwbGF5TmFtZX0pYDtcbiAgICAgICAgcmV0dXJuIFdpdGhUUlBDO1xuICAgIH07XG59XG5cbmZ1bmN0aW9uIGNyZWF0ZVRSUENOZXh0KG9wdHMpIHtcbiAgICBjb25zdCBob29rcyA9IGNyZWF0ZUhvb2tzSW50ZXJuYWwoKTtcbiAgICAvLyBUT0RPOiBtYXliZSBzZXQgVFNTUkNvbnRleHQgdG8gYG5ldmVyYCB3aGVuIHVzaW5nIGBXaXRoVFJQQ05vU1NST3B0aW9uc2BcbiAgICBjb25zdCBfd2l0aFRSUEMgPSB3aXRoVFJQQyhvcHRzKTtcbiAgICByZXR1cm4gY3JlYXRlRmxhdFByb3h5KChrZXkpPT57XG4gICAgICAgIGlmIChrZXkgPT09ICd1c2VDb250ZXh0Jykge1xuICAgICAgICAgICAgcmV0dXJuICgpPT57XG4gICAgICAgICAgICAgICAgY29uc3QgY29udGV4dCA9IGhvb2tzLnVzZUNvbnRleHQoKTtcbiAgICAgICAgICAgICAgICAvLyBjcmVhdGUgYSBzdGFibGUgcmVmZXJlbmNlIG9mIHRoZSB1dGlscyBjb250ZXh0XG4gICAgICAgICAgICAgICAgcmV0dXJuIHVzZU1lbW8oKCk9PntcbiAgICAgICAgICAgICAgICAgICAgcmV0dXJuIGNyZWF0ZVJlYWN0UXVlcnlVdGlsc1Byb3h5KGNvbnRleHQpO1xuICAgICAgICAgICAgICAgIH0sIFtcbiAgICAgICAgICAgICAgICAgICAgY29udGV4dFxuICAgICAgICAgICAgICAgIF0pO1xuICAgICAgICAgICAgfTtcbiAgICAgICAgfVxuICAgICAgICBpZiAoa2V5ID09PSAnd2l0aFRSUEMnKSB7XG4gICAgICAgICAgICByZXR1cm4gX3dpdGhUUlBDO1xuICAgICAgICB9XG4gICAgICAgIHJldHVybiBjcmVhdGVSZWFjdFByb3h5RGVjb3JhdGlvbihrZXksIGhvb2tzKTtcbiAgICB9KTtcbn1cblxuZXhwb3J0IHsgY3JlYXRlVFJQQ05leHQsIHdpdGhUUlBDIH07XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./node_modules/@trpc/next/dist/index.mjs\n");
+module.exports = require("react/jsx-runtime");
 
 /***/ })
 
@@ -140,7 +123,7 @@ eval("__webpack_require__.a(__webpack_module__, async (__webpack_handle_async_de
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__("./src/pages/_app.tsx"));
+var __webpack_exports__ = __webpack_require__.X(0, [938], () => (__webpack_exec__(2025)));
 module.exports = __webpack_exports__;
 
 })();

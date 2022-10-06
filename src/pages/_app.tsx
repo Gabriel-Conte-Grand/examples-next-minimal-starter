@@ -1,8 +1,49 @@
-import type { AppType } from 'next/app';
-import { trpc } from '../utils/trpc';
+import type { AppProps } from 'next/app'
+import { withTRPC } from '@trpc/next'
+import { loggerLink } from '@trpc/client/links/loggerLink'
+import { httpBatchLink } from '@trpc/client/links/httpBatchLink'
+import superjson from 'superjson'
+import { AppRouter } from '../server/route/app.router'
+import { url } from '../constants'
 
-const MyApp: AppType = ({ Component, pageProps }) => {
-  return <Component {...pageProps} />;
-};
+function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    <main>
+      <Component {...pageProps} />
+    </main>
+  )
+}
 
-export default trpc.withTRPC(MyApp);
+export default withTRPC<AppRouter>({
+  config({ ctx }) {
+    const links = [
+      loggerLink(),
+      httpBatchLink({
+        maxBatchSize: 10,
+        url,
+      }),
+    ]
+
+    return {
+      queryClientConfig: {
+        defaultOptions: {
+          queries: {
+            staleTime: 60,
+          },
+        },
+      },
+      headers() {
+        if (ctx?.req) {
+          return {
+            ...ctx.req.headers,
+            'x-ssr': '1',
+          }
+        }
+        return {}
+      },
+      links,
+      transformer: superjson,
+    }
+  },
+  ssr: false,
+})(MyApp)
