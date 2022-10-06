@@ -30,7 +30,6 @@ export default function IndexPage() {
   const [inputMessage, setInputMessage] = useState<string>('')
 
   const { data, isLoading } = trpc.useQuery(['messages.msg.list'])
-  const allMessages = data
 
   const addMessage = trpc.useMutation(['messages.msg.add'])
 
@@ -49,6 +48,7 @@ export default function IndexPage() {
     )
   }
 
+  const allMessages = data
   const showMessages = allMessages!.map((msg) => {
     let newDate = new Date().toDateString().slice(0, -5)
 
