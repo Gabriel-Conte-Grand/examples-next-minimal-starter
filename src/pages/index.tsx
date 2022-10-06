@@ -49,6 +49,7 @@ export default function IndexPage() {
   }
 
   const allMessages = data
+  console.log(data)
   const showMessages = allMessages!.map((msg) => {
     let newDate = new Date().toDateString().slice(0, -5)
 
@@ -86,33 +87,34 @@ export default function IndexPage() {
                       fontSize: '1.05rem',
                     }}
                   >
-                    {showMessages?.map((msg) => (
-                      <ListItem
-                        key={msg._id}
-                        sx={{
-                          borderRadius: '1.15rem',
-                          lineHeight: '1.5',
-                          maxWidth: '100%',
-                          minWidth: '50%',
-                          padding: ' 0.5rem .875rem',
-                          position: 'relative',
-                        }}
-                      >
-                        <Grid xs={4}>
-                          <ListItemText
-                            sx={{
-                              backgroundColor: 'paleturquoise',
-                              borderRadius: '5px',
-                              padding: '5px',
-                              paddingLeft: '7px',
-                            }}
-                          >
-                            <ListItemText primary={`${msg.text}`} />
-                            <ListItemText secondary={`${msg.createdAt}`} />
-                          </ListItemText>
-                        </Grid>
-                      </ListItem>
-                    ))}
+                    {showMessages &&
+                      showMessages.map((msg) => (
+                        <ListItem
+                          key={msg._id}
+                          sx={{
+                            borderRadius: '1.15rem',
+                            lineHeight: '1.5',
+                            maxWidth: '100%',
+                            minWidth: '50%',
+                            padding: ' 0.5rem .875rem',
+                            position: 'relative',
+                          }}
+                        >
+                          <Grid item xs={4}>
+                            <ListItemText
+                              sx={{
+                                backgroundColor: 'paleturquoise',
+                                borderRadius: '5px',
+                                padding: '5px',
+                                paddingLeft: '7px',
+                              }}
+                            >
+                              <ListItemText primary={`${msg.text}`} />
+                              <ListItemText secondary={`${msg.createdAt}`} />
+                            </ListItemText>
+                          </Grid>
+                        </ListItem>
+                      ))}
                   </List>
                 </Grid>
 
