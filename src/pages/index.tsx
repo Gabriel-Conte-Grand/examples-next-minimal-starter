@@ -29,13 +29,25 @@ export default function IndexPage() {
 
   const [inputMessage, setInputMessage] = useState<string>('')
 
-  const { data, isLoading } = trpc.useQuery(['messages.msg.list'])
+  const getMessages = trpc.useQuery(['messages.msg.list'], {
+    refetchInterval: 1000,
+  })
+  const { data, isLoading } = getMessages
+
+  const queryClient = new QueryClient()
 
   const addMessage = trpc.useMutation(['messages.msg.add'])
 
   const onSubmitMessage = async () => {
     if (inputMessage.trim().length) {
-      await addMessage.mutate({ text: inputMessage })
+      await addMessage.mutate(
+        { text: inputMessage },
+        {
+          onSuccess: () => {
+            queryClient.invalidateQueries(['messages.msg.list'])
+          },
+        }
+      )
       setInputMessage('')
     }
   }
