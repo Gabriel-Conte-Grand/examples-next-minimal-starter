@@ -20,9 +20,6 @@ import SendIcon from '@mui/icons-material/Send'
 import { Fragment, useEffect, useState } from 'react'
 import { trpc } from '../utils/trpc'
 import Bar from '../components/Bar'
-import { IMessage } from '../interfaces/message'
-import { useRouter } from 'next/router'
-import { QueryClient } from '@tanstack/react-query'
 
 export default function IndexPage() {
   // 💡 Tip: CMD+Click (or CTRL+Click) on `greeting` to go to the server definition
@@ -34,20 +31,11 @@ export default function IndexPage() {
   })
   const { data, isLoading } = getMessages
 
-  const queryClient = new QueryClient()
-
   const addMessage = trpc.useMutation(['messages.msg.add'])
 
-  const onSubmitMessage = async () => {
+  const onSubmitMessage = () => {
     if (inputMessage.trim().length) {
-      await addMessage.mutate(
-        { text: inputMessage },
-        {
-          onSuccess: () => {
-            queryClient.invalidateQueries(['messages.msg.list'])
-          },
-        }
-      )
+      addMessage.mutate({ text: inputMessage })
       setInputMessage('')
     }
   }
