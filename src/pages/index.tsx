@@ -29,7 +29,7 @@ export default function IndexPage() {
 
   const [inputMessage, setInputMessage] = useState<string>('')
 
-  const { data } = trpc.useQuery(['messages.msg.list'])
+  const { data, isLoading } = trpc.useQuery(['messages.msg.list'])
   const allMessages = data
 
   const addMessage = trpc.useMutation(['messages.msg.add'])
@@ -41,7 +41,7 @@ export default function IndexPage() {
     }
   }
 
-  if (!allMessages) {
+  if (isLoading) {
     return (
       <div style={styles}>
         <h1>Loading...</h1>
